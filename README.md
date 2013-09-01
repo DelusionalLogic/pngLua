@@ -32,6 +32,12 @@ The supported colortypes are as follows:
 -    Greyscale/alpha
 -    Truecolor/alpha
 
-So far the module only supports 8-bit Color. and no ancillary chunks.
+So far the module only supports 256 Colors in png-8, png-24 as well as png-32 files. and no ancillary chunks.
 
-Multiple IDAT chunks are supported, as well as all filters.
+More than 256 colors might be supported (Bit-depths over 8) as long as they align with whole bytes. These have not been tested.
+
+Multiple IDAT chunks of arbitrary lengths are supported, as well as all filters.
+
+Errors
+-------
+So far no error-checking has been implemented. No crc32 checks are done.
