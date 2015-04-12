@@ -1,5 +1,4 @@
-PNGLua
-======
+![pngLua logo](/logo.png?raw=true)
 
 A pure lua implementation of a PNG decoder
 
